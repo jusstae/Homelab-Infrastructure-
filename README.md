@@ -50,8 +50,8 @@ Resolved incorrect gateway configuration
 ## Lessons Learned
 
 - Proper routing and gateway configuration is critical 
-- VLAN segmentgtation improves organization and security
+- VLAN segmentation improves organization and security
 - Structured > troubleshooting reduces time spent debugging
 
 
-<p style="text-align:center;">Documented and created by @jusstae</p>
+<p style='text-align:center;'>Documented and created by @jusstae</p>
