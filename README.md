@@ -36,6 +36,8 @@ The current network setup is designed to work within apartment limitations, wher
 | VLAN 20 | Lab/Testing |
 | VLAN 50 | Services |
 
+---
+
 ## Troubleshooting 
 
 ### Issue: VM had no internet access
@@ -44,14 +46,49 @@ The current network setup is designed to work within apartment limitations, wher
 - Verified routing table (`ip route`)
 - Tested connectivity
 
-Resolved incorrect gateway configuration 
+Resolved incorrect gateway configuration.
 
 
 ## Lessons Learned
 
-- Proper routing and gateway configuration is critical 
-- VLAN segmentation improves organization and security
-- Structured > troubleshooting reduces time spent debugging
+- Proper routing and gateway configuration is critical. 
+- VLAN segmentation improves organization and security.
+- Structured > troubleshooting reduces time spent debugging.
+
+
+-- Add Completed Sections --
+
+## Future Plans
+
+### Customer Router Build 
+- Build a dedicated router using low-power hardware
+- Run Ubuntu Server for full control over networking
+- Configure DCHP, routing, and firewall troubleshooting
+
+**Tools**:
+- Netplan
+- iptables
+- isc-dhcp-server
+
+--- 
+
+### Network Expansion 
+- Implement a manged switch for improve VLAN control
+- Expand network segmentation and traffic management
+
+---
+
+### Raspberry Pi Enhancement 
+- Deploy Pi-hole for DNS-based ad blocking 
+- Use Python scripts for network monitoring and automation
+
+---
+
+### NAS (Network Attached Stroage)
+  - Used/new parts (Low Power Watts parts), HHD  
+  - Will be running on proxmox, with a ubuntu server (Manual config)
+
+
 
 
 <p style='text-align:center;'>Documented and created by @jusstae</p>
