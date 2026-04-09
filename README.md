@@ -54,5 +54,4 @@ Resolved incorrect gateway configuration
 - Structured > troubleshooting reduces time spent debugging
 
 
-
-Documented and created by @jusstae
+<p style="text-align:center;">Documented and created by @jusstae</p>
