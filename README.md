@@ -1,4 +1,4 @@
-# Homelab-Infrastructure-
+# Homelab-Infrastructure
 This project documents my personal homelab used to simulate real-world IT environments.
 
 The lab focus on:
@@ -11,6 +11,8 @@ The lab focus on:
 
 It is used to gain hands-on experience and reduce reliance on external services.
 
+---
+
 ## Networking Evolution
 
 ### Current Network 
@@ -18,6 +20,8 @@ It is used to gain hands-on experience and reduce reliance on external services.
 
 ### Future Network (Planned)
 ![Future](images/)
+
+---
 
 ## Architecture
 
@@ -27,6 +31,8 @@ The current network setup is designed to work within apartment limitations, wher
 - The Raspberry Pi 4 functions as a router running Ubuntu server, bridging WiFi (WAN) to Ethernet (LAN).
 - The Proxmox server connects via Ethernet and hosts virtual machines.
 - A VLAN-aware bridge is used to segment network traffic across different environments.
+
+--- 
 
 ## VLAN Configuration 
 
@@ -41,13 +47,13 @@ The current network setup is designed to work within apartment limitations, wher
 ## Troubleshooting 
 
 ### Issue: VM had no internet access
-
 - Checked interface configuration (`ip a`)
 - Verified routing table (`ip route`)
 - Tested connectivity
 
 Resolved incorrect gateway configuration.
 
+---
 
 ## Lessons Learned
 
@@ -55,8 +61,7 @@ Resolved incorrect gateway configuration.
 - VLAN segmentation improves organization and security.
 - Structured > troubleshooting reduces time spent debugging.
 
-
--- Add Completed Sections --
+--- 
 
 ## Future Plans
 
@@ -84,11 +89,11 @@ Resolved incorrect gateway configuration.
 
 ---
 
-### NAS (Network Attached Stroage)
-  - Used/new parts (Low Power Watts parts), HHD  
-  - Will be running on proxmox, with a ubuntu server (Manual config)
+### NAS (Network Attached Storage)
+  - Build a low-power NAS using/new hardware
+  - Host storage services on Proxmox using Ubuntu Server
+  - Configure manual storage and backup solutions 
 
 
+**Built and documented by jusstae**
 
-
-<p style='text-align:center;'>Documented and created by @jusstae</p>
