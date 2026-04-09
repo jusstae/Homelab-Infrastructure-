@@ -59,7 +59,7 @@ Resolved incorrect gateway configuration.
 
 - Proper routing and gateway configuration is critical. 
 - VLAN segmentation improves organization and security.
-- Structured > troubleshooting reduces time spent debugging.
+- Structured troubleshooting reduces time spent debugging.
 
 --- 
 
