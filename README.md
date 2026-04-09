@@ -94,6 +94,3 @@ Resolved incorrect gateway configuration.
   - Host storage services on Proxmox using Ubuntu Server
   - Configure manual storage and backup solutions 
 
-
-**Built and documented by jusstae**
-
