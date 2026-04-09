@@ -38,15 +38,21 @@ The current network setup is designed to work within apartment limitations, wher
 
 ## Troubleshooting 
 
-N/A
-N/A 
+### Issue: VM had no internet access
+
+- Checked interface configuration (`ip a`)
+- Verified routing table (`ip route`)
+- Tested connectivity
+
+Resolved incorrect gateway configuration 
 
 
 ## Lessons Learned
 
-N/A 
-N/A 
+- Proper routing and gateway configuration is critical 
+- VLAN segmentgtation improves organization and security
+- Structured > troubleshooting reduces time spent debugging
 
 
 
-# Documented and made by jusstae
+Documented and created by @jusstae
