@@ -9,7 +9,7 @@ The lab focus on:
 - Fundamentals
 - Learning
 
-It is used to gain hands-on experience and reduce reliance on external services.
+It is used to gain hands-on experience and reduce reliance on external services. This repo will be regular updated.
 
 ---
 
@@ -80,17 +80,73 @@ Resolved incorrect gateway configuration.
 ### Network Expansion 
 - Implement a manged switch for improve VLAN control
 - Expand network segmentation and traffic management
+- Access point, will allow me to have two ssids
+  - SSID-1: Personal trusted devices
+  - SSID-2: Non trusted devices(TV will need to reach my NAS)
 
 ---
 
-### Raspberry Pi Enhancement 
-- Deploy Pi-hole for DNS-based ad blocking 
-- Use Python scripts for network monitoring and automation
+### Raspberry Pi Isolations
+- Setup a second router connected to the main router
+- Main router will treat the pi 4 as any other devices on the network (no direct connect to switch)
+- all traffic from the mini pc will only know about the Pi 4 
+- Mini pc
+  - Proxmox with VLAN-aware
+  - Machine will be used to:
+    - Spin up any linux distros
+    - Experiment with networking setups
+    - Run isolated malware virtual machines 
 
 ---
 
 ### NAS (Network Attached Storage)
-  - Build a low-power NAS using/new hardware
-  - Host storage services on Proxmox using Ubuntu Server
-  - Configure manual storage and backup solutions 
+- Build a low-power NAS using/new hardware
+- Host storage services on Proxmox using Ubuntu Server
+- Configure manual storage and backup solutions 
 
+---
+
+### Hardware Upgrades
+#### Current Network
+The current setup consists of a Raspberry Pi 4 and a desktop PC. This configuration is sufficient for hosting multiple virtual machines and general experimentation. However, the systems are not operated continuously (24/7), and physical space constraints limit expansion options.
+
+#### Limitations
+- Lack of continuous operation
+- Space constraints prevent the use of a standard 19" rack
+- Current layout relies partially on non-optimal placement and connectivity
+- Planned Upgrade
+
+To improve organization and network reliability, the infrastructure will be migrated to a 10" 8U rack.
+
+#### Objectives
+- Fit within limited living space
+- Centralize equipment near the ISP modem
+- Enable full Ethernet connectivity for all devices in the rack
+- Reduce reliance on Wi-Fi
+- Improve overall network stability and performance
+- Deployment Notes
+- The rack will be installed in the living room adjacent to the ISP modem
+- All systems within the rack will be connected via Ethernet
+- The compact 10" form factor provides a balance between scalability and space efficiency
+
+#### Rack Design
+- Access point
+
+- 1u patch panel
+
+- 1u Custom Router
+  - thinkcentre M720q or M920q
+
+- 1u PoE 8 port managed switch
+
+- 2x 1u Proxmox
+  - thinkcentre M720q/M920q
+  - will cluster together
+
+- 1u thinkcentre M920q (NAS Controller)
+  - Pcie Riser, Sata expansion card
+  - 12v Dc adapter from psu
+
+- 1u icydock 6 bay ssd 2.5 sata
+
+- 1u Mini pc (Dell or thinkcentre) & pi 4 router
