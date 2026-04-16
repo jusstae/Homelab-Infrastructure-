@@ -19,18 +19,39 @@ It is used to gain hands-on experience and reduce reliance on external services.
 ![Current](./images/Zco4mWxX.png)
 
 ### Future Network (Planned)
-![Future](images/)
+![Current](./images/Future-BasicNetwork-Diagram.png)
 
 ---
 
 ## Architecture
 
+#### Current Architecture
 The current network setup is designed to work within apartment limitations, where traditional wired infrastructure is not fully available.
 
 - The ISP modems provides WAN connectivity via WiFi 
 - The Raspberry Pi 4 functions as a router running Ubuntu server, bridging WiFi (WAN) to Ethernet (LAN).
 - The Proxmox server connects via Ethernet and hosts virtual machines.
 - A VLAN-aware bridge is used to segment network traffic across different environments.
+
+ #### Future Architecture
+The future network setup is designed for an 8U 10" rack, allowing all internal devices to be fully wired within the rack itself. While not all switch ports will be heavily used, having additional ports available provides flexibility for management access and wired connections, such as for gaming.
+
+You can refer to my Homelab-Networking documentation for a detailed overview of how everything operates, including VLAN configurations and firewall setup.
+
+##### Legend:
+
+Solid lines represent non-Ethernet connections
+Arrows (→) indicate wired Ethernet connections
+Dashed lines (--) represent wireless connections
+
+##### Color Coding:
+
+Green: Home network and PoE devices (VLAN 10)
+Blue: Servers and services (VLAN 20)
+Yellow: Trusted management devices (VLAN 99)
+Orange: NAS (VLAN 30)
+White: Direct connections (non-VLAN)
+Red: Reserved for future expansion, such as additional devices or another switch
 
 --- 
 
@@ -82,7 +103,7 @@ Resolved incorrect gateway configuration.
 - Expand network segmentation and traffic management
 - Access point, will allow me to have two ssids
   - SSID-1: Personal trusted devices
-  - SSID-2: Non trusted devices(TV will need to reach my NAS)
+  - SSID-2: Non trusted devices(TV will need to reach NAS)
 
 ---
 
@@ -141,7 +162,6 @@ To improve organization and network reliability, the infrastructure will be migr
 
 - 2x 1u Proxmox
   - thinkcentre M720q/M920q
-  - will cluster together
 
 - 1u thinkcentre M920q (NAS Controller)
   - Pcie Riser, Sata expansion card
