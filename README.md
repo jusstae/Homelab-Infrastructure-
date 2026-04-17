@@ -40,18 +40,18 @@ You can refer to my Homelab-Networking documentation for a detailed overview of 
 
 ##### Legend:
 
-Solid lines represent non-Ethernet connections
-Arrows (→) indicate wired Ethernet connections
-Dashed lines (--) represent wireless connections
+- Solid lines represent non-Ethernet connections
+- Arrows (→) indicate wired Ethernet connections
+- Dashed lines (--) represent wireless connections
 
 ##### Color Coding:
 
-Green: Home network and PoE devices (VLAN 10)
-Blue: Servers and services (VLAN 20)
-Yellow: Trusted management devices (VLAN 99)
-Orange: NAS (VLAN 30)
-White: Direct connections (non-VLAN)
-Red: Reserved for future expansion, such as additional devices or another switch
+- Green: Home network and PoE devices (VLAN 10)
+- Blue: Servers and services (VLAN 20)
+- Yellow: Trusted management devices (VLAN 99)
+- Orange: NAS (VLAN 30)
+- White: Direct connections (non-VLAN)
+- Red: Reserved for future expansion, such as additional devices or another switch
 
 --- 
 
