@@ -33,25 +33,12 @@ The current network setup is designed to work within apartment limitations, wher
 - The Proxmox server connects via Ethernet and hosts virtual machines.
 - A VLAN-aware bridge is used to segment network traffic across different environments.
 
- #### Future Architecture
-The future network setup is designed for an 8U 10" rack, allowing all internal devices to be fully wired within the rack itself. While not all switch ports will be heavily used, having additional ports available provides flexibility for management access and wired connections, such as for gaming.
+#### Future Architecture
+The future network setup is designed for an 8U 10" rack, allowing all internal devices to be fully wired within the rack itself. While not all switch ports will be heavily used, having additional ports available provides flexibility for management access and wired connections, such as for gaming and emergency wired connections to management VM.
 
-You can refer to my Homelab-Networking documentation for a detailed overview of how everything operates, including VLAN configurations and firewall setup.
+You can refer to my Networking [Homelab-Networking](https://github.com/jusstae/Homelab-Networking) repo for a detailed overview of how everything operates, including VLAN configurations and firewall setup.
 
-##### Legend:
-
-- Solid lines represent non-Ethernet connections
-- Arrows (→) indicate wired Ethernet connections
-- Dashed lines (--) represent wireless connections
-
-##### Color Coding:
-
-- Green: Home network and PoE devices (VLAN 10)
-- Blue: Servers and services (VLAN 20)
-- Yellow: Trusted management devices (VLAN 99)
-- Orange: NAS (VLAN 30)
-- White: Direct connections (non-VLAN)
-- Red: Reserved for future expansion, such as additional devices or another switch
+Sorry for white background, draw.io is confusing with their color background options.
 
 --- 
 
