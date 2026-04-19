@@ -138,34 +138,14 @@ To improve organization and network reliability, the infrastructure will be migr
 - The compact 10" form factor provides a balance between scalability and space efficiency
 
 #### Rack Design
-- Access point
-
-- 1u patch panel
-
-- 1u Custom Router
-  - thinkcentre M720q or M920q
-
-- 1u PoE 8 port managed switch
-
-- 2x 1u Proxmox
-  - thinkcentre M720q/M920q
-
-- 1u thinkcentre M920q (NAS Controller)
-  - Pcie Riser, Sata expansion card
-  - 12v Dc adapter from psu
-
-- 1u icydock 6 bay ssd 2.5 sata
-
-- 1u Mini pc (Dell or thinkcentre) & pi 4 router
-
-| 8u Rack  Design |
+| 8u Rack Design |
 | --- |
-| Top | Access Point 
-| 1 | 1u Patch Panel
-| 2 | 1u Router 
-| 3 | 1u PoE 8 Port Managed Switch
-| 4 | 1u Mini Pc  
-| 5 | 1u Mini Pc
-| 6 | 1u Mini Pc (NAS Controller)
-| 7 | 1u Icydock 6 Bay Ssd
-| 8 | 1u Mini Pc & Pi 4 Router
+| Top  Access Point 
+| 1  1u Patch Panel
+| 2  1u Router 
+| 3  1u PoE 8 Port Managed Switch
+| 4  1u Mini Pc  
+| 5  1u Mini Pc
+| 6  1u Mini Pc (NAS Controller)
+| 7  1u Icydock 6 Bay Ssd
+| 8  1u Mini Pc & Pi 4 Router
