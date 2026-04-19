@@ -97,7 +97,7 @@ Resolved incorrect gateway configuration.
 ### Raspberry Pi Isolations
 - Setup a second router connected to the main router
 - Main router will treat the pi 4 as any other devices on the network (no direct connect to switch)
-- all traffic from the mini pc will only know about the Pi 4 
+- All traffic from the mini pc will only know about the Pi 4 
 - Mini pc
   - Proxmox with VLAN-aware
   - Machine will be used to:
@@ -157,3 +157,15 @@ To improve organization and network reliability, the infrastructure will be migr
 - 1u icydock 6 bay ssd 2.5 sata
 
 - 1u Mini pc (Dell or thinkcentre) & pi 4 router
+
+| 8u Rack  Design |
+| --- |
+| Top | Access Point 
+| 1 | 1u Patch Panel
+| 2 | 1u Router 
+| 3 | 1u PoE 8 Port Managed Switch
+| 4 | 1u Mini Pc  
+| 5 | 1u Mini Pc
+| 6 | 1u Mini Pc (NAS Controller)
+| 7 | 1u Icydock 6 Bay Ssd
+| 8 | 1u Mini Pc & Pi 4 Router
