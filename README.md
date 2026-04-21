@@ -1,15 +1,18 @@
-# Homelab-Infrastructure
-This project documents my personal homelab used to simulate real-world IT environments.
+# Homelab-Infrastructure (Phase 1)
 
-The lab focus on:
-- Networking
-- Virtualization
-- Troubleshooting
-- System Design
-- Fundamentals
-- Learning
+This repository documents my personal homelab in its current early-stage architecture (Phase 1).
+The lab is designed to simulate real-world IT environments for learning and experimentation in networking, virtualization, and system administration.
 
-It is used to gain hands-on experience and reduce reliance on external services. This repo will be regular updated.
+The focus is on:
+
+Networking fundamentals
+Virtualization with VMs
+Troubleshooting real systems
+Linux system administration
+Practical infrastructure design
+🧭 Current Architecture
+
+The current setup is designed for a minimal home environment with limited hardware and no managed switching infrastructure.
 
 ---
 
@@ -18,7 +21,7 @@ It is used to gain hands-on experience and reduce reliance on external services.
 ### Current Network 
 ![Current](./images/Zco4mWxX.png)
 
-### Future Network (Planned)
+### Current Networking (Planned)
 ![Current](./images/Future-BasicNetwork-Diagram.png)
 
 ---
@@ -33,22 +36,12 @@ The current network setup is designed to work within apartment limitations, wher
 - The Proxmox server connects via Ethernet and hosts virtual machines.
 - A VLAN-aware bridge is used to segment network traffic across different environments.
 
-#### Future Architecture
-The future network setup is designed for an 8U 10" rack, allowing all internal devices to be fully wired within the rack itself. While not all switch ports will be heavily used, having additional ports available provides flexibility for management access and wired connections, such as for gaming and emergency wired connections to management VM.
-
-You can refer to my Networking [Homelab-Networking](https://github.com/jusstae/Homelab-Networking) repo for a detailed overview of how everything operates, including VLAN configurations and firewall setup.
-
-Sorry for white background, draw.io is confusing with their color background options.
-
---- 
-
-## VLAN Configuration 
-
-| VLAN | Purpose |
-| --- | --- |
-| VLAN 10 | Main/Trusted Network |
-| VLAN 20 | Lab/Testing |
-| VLAN 50 | Services |
+#### Current Limitations
+- No managed switch infrastructure
+- No VLAN segmentation
+- Limited to single LAN environment
+- WiFi-based uplink from ISP router
+- No persistent 24/7 hardware operation
 
 ---
 
@@ -71,17 +64,9 @@ Resolved incorrect gateway configuration.
 
 --- 
 
-## Future Plans
+## Future Plans (Phase 2)
 
-### Customer Router Build 
-- Build a dedicated router using low-power hardware
-- Run Ubuntu Server for full control over networking
-- Configure DCHP, routing, and firewall troubleshooting
-
-**Tools**:
-- Netplan
-- iptables
-- isc-dhcp-server
+This is planned evolution, not current state:
 
 --- 
 
@@ -94,58 +79,30 @@ Resolved incorrect gateway configuration.
 
 ---
 
-### Raspberry Pi Isolations
-- Setup a second router connected to the main router
-- Main router will treat the pi 4 as any other devices on the network (no direct connect to switch)
-- All traffic from the mini pc will only know about the Pi 4 
-- Mini pc
-  - Proxmox with VLAN-aware
-  - Machine will be used to:
-    - Spin up any linux distros
-    - Experiment with networking setups
-    - Run isolated malware virtual machines 
+### Infrastructure Upgrade 
+- Move to rack-based setup (8u 10" rack)
+- Fully wired internal network
+- Reduce reliance on WiFi uplink
 
 ---
 
-### NAS (Network Attached Storage)
+### Sandbox Expansion
+- Transfers my current setup into a sandbox isolated lab environments
+- More VM experimentation environments
+
+---
+
+### NAS / Storage 
 - Build a low-power NAS using/new hardware
 - Host storage services on Proxmox using Ubuntu Server
 - Configure manual storage and backup solutions 
 
 ---
 
-### Hardware Upgrades
-#### Current Network
-The current setup consists of a Raspberry Pi 4 and a desktop PC. This configuration is sufficient for hosting multiple virtual machines and general experimentation. However, the systems are not operated continuously (24/7), and physical space constraints limit expansion options.
+## Summary 
+This Phase 1 homelab is a minimal but functional dual-system setup consisting of:
 
-#### Limitations
-- Lack of continuous operation
-- Space constraints prevent the use of a standard 19" rack
-- Current layout relies partially on non-optimal placement and connectivity
-- Planned Upgrade
+- A virtualization host (Proxmox Pc)
+- An isolated sandbox router (Raspberry Pi 4)
 
-To improve organization and network reliability, the infrastructure will be migrated to a 10" 8U rack.
-
-#### Objectives
-- Fit within limited living space
-- Centralize equipment near the ISP modem
-- Enable full Ethernet connectivity for all devices in the rack
-- Reduce reliance on Wi-Fi
-- Improve overall network stability and performance
-- Deployment Notes
-- The rack will be installed in the living room adjacent to the ISP modem
-- All systems within the rack will be connected via Ethernet
-- The compact 10" form factor provides a balance between scalability and space efficiency
-
-#### Rack Design
-| 8u Rack Design |
-| --- |
-| Top  Access Point 
-| 1  1u Patch Panel
-| 2  1u Router 
-| 3  1u PoE 8 Port Managed Switch
-| 4  1u Mini Pc  
-| 5  1u Mini Pc
-| 6  1u Mini Pc (NAS Controller)
-| 7  1u Icydock 6 Bay Ssd
-| 8  1u Mini Pc & Pi 4 Router
+It is design to gradually evolve into a full  enterprise-style lab with VLANS, switching, and rack-mounted infrastructure.
