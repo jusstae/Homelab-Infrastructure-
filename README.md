@@ -5,11 +5,11 @@ The lab is designed to simulate real-world IT environments for learning and expe
 
 The focus is on:
 
-Networking fundamentals
-Virtualization with VMs
-Troubleshooting real systems
-Linux system administration
-Practical infrastructure design
+- Networking fundamentals
+- Virtualization with VMs
+- Troubleshooting real systems
+- Linux system administration
+- Practical infrastructure design
 
 ---
 
