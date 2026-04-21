@@ -21,7 +21,7 @@ The current setup is designed for a minimal home environment with limited hardwa
 ### Current Network 
 ![Current](./images/Zco4mWxX.png)
 
-### Current Networking (Planned)
+### Future Networking (Planned)
 ![Current](./images/Future-BasicNetwork-Diagram.png)
 
 ---
