@@ -23,7 +23,7 @@ Practical infrastructure design
 
 ---
 
-## ⚠️ Architecture
+## 🧠 Architecture
 
 ### 🧭 Current Architecture
 The current network setup is designed to work within apartment limitations, where traditional wired infrastructure is not fully available.
