@@ -15,7 +15,7 @@ The focus is on:
 
 ## 🔧 Networking Evolution
 
-| Cat pics               | Dog pics               |
+| Current Network Plan             | Future Network Plan              |
 | ---------------------- | ---------------------- |
 | ![Current](./images/Zco4mWxX.png) | ![Future Networking](./images/Future-BasicNetwork-Diagram.png) |
 
