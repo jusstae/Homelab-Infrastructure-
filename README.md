@@ -15,11 +15,11 @@ The focus is on:
 
 ## 🔧 Networking Evolution
 
-#### Current Network 
-![Current](./images/Zco4mWxX.png)
+#### Current Network
+<img src ="./images/Zco4mWxX.png" width = "600" />
 
 #### Future Networking (Planned)
-![Current](./images/Future-BasicNetwork-Diagram.png)
+<img src = "./images/Future-BasicNetwork-Diagram.png" width= "600"/>
 
 ---
 
